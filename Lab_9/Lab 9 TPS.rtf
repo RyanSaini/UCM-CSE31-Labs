@@ -1,0 +1,60 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2512
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Lab 9 TPS Activities:\
+\
+4. A machine instruction contains 32 bits.\
+\
+5. There are 3 formats. I format such as addi and sw. J format such as jal and j. R format such as add and jr\
+\
+6. \
+	a. I format. Four fields: op, rs, rt, immediate \
+\
+	b. It is 0x8, rs is value 0x0 stored in $zero, rt is 0x10 stored in $0, immediate value is 25 in hex 		is 0x19\
+	\
+	c. In binary: 001000 00000 10000 0000 0000 0001 1001 In hex: 0x20100019\
+\
+7. \
+	a. 0x0230402a. In binary: 0000 0010 0011 0000 0100 0000 0010 1010\
+	\
+	b. It is R type because the op code is 0. There are 6 fields: opcode, rs, rt, rd, shamt, funct\
+\
+	c. Opcode: 0, rs: 11, rt: 10, rd: 08, shamt: 0, function: 2a\
+\
+	d. Since the func is 2a it is slt. rs is $s1, rt is $s0, rd is $t0\
+	\
+	e. slt $t0, $s1, $s0. Yes it is the same\
+\
+8.\
+	a. This instruction is in I format\
+\
+	b. Opcode is 0x5, rs is 0x8, and rt is 0x0\
+	\
+	c. LESS. 0x00401c\
+	\
+	d. No we do not. 1 is the value of the immediate \
+	\
+	e. The value here would be 1.\
+\
+	f. 0001 0101 0000 0000 0000 0000 0000 0001 = 0x15000001 \
+\
+9.\
+	a. J format, along with 2 fields\
+\
+	b. 0x2\
+\
+	c. It jumps to the GREQ label at address 0x00400030\
+\
+	d. 26 bits. To do this we cut off the last 2 bits and the first 4 bits. Resulting in the loss of 6 bits. We can do this as the addresses should be the same or about the same so this method works.\
+		In binary this field is(26 bit): 0000 0100 0000 0000 0000 0011 00\
+						  \
+	e. 0000 0100 0001 0000 0000 0000 0000 1100 is the machine instruction in binary.\
+		\
+\
+\
+\
+}

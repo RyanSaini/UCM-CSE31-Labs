@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2512
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Lab 7\
+\
+TPS activity 1:\
+\
+1.  A method usually refers to a subroutine. A function returns a value. A procedure does not return a value. \
+\
+4. Line 12 \
+\
+5.Yes you can create a label for that line. Ex. Name line 13 \'93alpha\'94 and put \'93j alpha\'94 @ line 21.\
+\
+6. RA is suppose too. Tore thee address of. The line. after. It. Does not do it in this code however but it is suppose to. Address zero is being stored, it does not make sense. \
+\
+7. Error in : invalid program counter value: 0x00000000, It saying getting the wrong return address.\
+\
+8. It should return to 0x0040028\
+\
+9. Yes it is correct. Had to change it from hexadecimal. Should be the next line of written code.\
+\
+10.  4194344. Assemble: operation completed successfully. And then \'9315\'94\
+\
+11. jal and link, automatically links $ra to the next line. \
+\
+\
+\
+TPS activity. 2:\
+\
+1.  38\
+\
+3. Sum knows where to return to cause it uses jal and jr. The code should return to the sum part, additional code is needed to fix this issue. The return address Is being overwritten. We can use the stack pointer to help us return to each spot. The stack pointer will know which method you are in. \
+\
+4. We could push the needed values onto a stack, letting them be accessed later.\
+\
+5. The value of $s0 is lost as it is overwritten. Since. This. Can no longer be accessed. This is a problem for the value of x. We could push $s0 onto a stack to resolve this issue.  }
